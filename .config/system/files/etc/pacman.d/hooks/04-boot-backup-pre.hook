@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Backing up /boot before snapshot...
+When = PreTransaction
+Exec = /usr/bin/rsync -a --delete /boot/ /.bootbackup/

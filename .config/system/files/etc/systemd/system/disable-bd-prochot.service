@@ -1,0 +1,13 @@
+[Unit]
+Description=Disable BD PROCHOT (early boot)
+DefaultDependencies=no
+After=systemd-udevd.service systemd-modules-load.service
+Before=sysinit.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/disable-bd-prochot.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sysinit.target

@@ -1,0 +1,3 @@
+#!/bin/sh
+[ "$1" = "post" ] && /usr/local/bin/disable-bd-prochot.sh
+exit 0
