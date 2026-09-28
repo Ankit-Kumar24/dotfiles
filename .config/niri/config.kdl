@@ -1,0 +1,30 @@
+include "config.d/input.kdl"
+include "config.d/layout.kdl"
+include "config.d/startup.kdl"
+include "config.d/window-rules.kdl"
+include "config.d/binds.kdl"
+include "config.d/animations.kdl"
+include "config.d/cursor.kdl"
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+include "noctalia.kdl"
+
+hotkey-overlay {
+	skip-at-startup
+}
+
+blur {
+    passes 3
+    offset 3.0
+    noise 0.02
+    saturation 1.5
+}
+
+environment {
+    __GL_SHADER_DISK_CACHE_PATH "/home/solidv/.cache/nv"
+    CUDA_CACHE_PATH "/home/solidv/.cache/nv"
+    PULSE_COOKIE "/home/solidv/.config/pulse/cookie"
+}

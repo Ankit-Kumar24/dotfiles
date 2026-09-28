@@ -1,0 +1,12 @@
+# Taskwarrior config
+data.location=~/.local/share/task
+hooks.location=~/.local/share/task/hooks
+
+# Theme
+include /usr/share/doc/task/rc/dark-256.theme
+
+# Behaviour
+weekstart=monday
+search.case.sensitive=no
+confirmation=yes
+news.version=3.5.0

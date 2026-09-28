@@ -1,0 +1,20 @@
+[Presets]
+lastLoadedOutputPreset=Bass Boosted
+
+[StreamInputs]
+inputDevice=alsa_input.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.mono-fallback
+visiblePage=pluginsPage
+
+[StreamOutputs]
+mostUsedPresets=Bass Boosted,Bass Enhancing + Perfect EQ,Bass Enhancing + Perfect EQ - Low Latency,Boosted,Perfect EQ
+outputDevice=alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo
+plugins=equalizer#0,convolver#0,bass_enhancer#0,crossfeed#0,maximizer#0
+usedPresets=Bass Boosted:13,Bass Enhancing + Perfect EQ:10,Advanced Auto Gain:1,Bass Enhancing + Perfect EQ - Low Latency:7,Boosted:3,Dolby Atmos:2,Loudness+Autogain:2,Perfect EQ:2
+visiblePage=pluginsPage
+visiblePlugin=equalizer#0
+
+[Window]
+autostartOnLogin=true
+height=1066
+showTrayIcon=false
+width=1906
