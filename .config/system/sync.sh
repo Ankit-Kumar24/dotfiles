@@ -6,19 +6,22 @@ set -euo pipefail
 DEST="$HOME/.config/system/files"
 
 PATHS=(
-  /etc/modprobe.d/nvidia-power.conf
-  /etc/pacman.d/hooks
-  /etc/systemd/logind.conf.d
-  /etc/systemd/zram-generator.conf
-  /etc/snapper/configs
-  /etc/systemd/system/disable-bd-prochot.service
-  /usr/local/bin/disable-bd-prochot.sh
-  /usr/lib/systemd/system-sleep/disable-bd-prochot
+    /etc/greetd/config.toml
+    /etc/greetd/tuigreet.toml
+    /etc/systemd/system/create_ap.service.d/override.conf
+    /etc/modprobe.d/nvidia-power.conf
+    /etc/pacman.d/hooks
+    /etc/systemd/logind.conf.d
+    /etc/systemd/zram-generator.conf
+    /etc/snapper/configs
+    /etc/systemd/system/disable-bd-prochot.service
+    /usr/local/bin/disable-bd-prochot.sh
+    /usr/lib/systemd/system-sleep/disable-bd-prochot
 )
 
 existing=()
 for p in "${PATHS[@]}"; do
-  if [[ -e $p ]]; then existing+=("$p"); else echo "skip (missing): $p"; fi
+    if [[ -e $p ]]; then existing+=("$p"); else echo "skip (missing): $p"; fi
 done
 
 sudo rm -rf "$DEST"

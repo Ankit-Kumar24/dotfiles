@@ -1,0 +1,63 @@
+[display]
+show_time = true
+time_format = "%A, %d %B  ·  %H:%M"
+greeting = "Welcome back, solidv"
+align_greeting = "center"
+issue = false
+
+[layout]
+width = 50
+window_padding = 1
+container_padding = 1
+prompt_padding = 1
+
+[layout.widgets]
+time_position = "top"
+status_position = "bottom"
+
+[remember]
+username = true
+session = true
+user_session = true
+
+[secret]
+mode = "characters"
+characters = "•"
+
+[user_menu]
+enabled = false
+
+[keybindings]
+command = 2
+sessions = 3
+background = 4
+power = 12
+
+[background]
+kind = "matrix"
+fps = 10
+
+[background.matrix]
+head_color   = "white"
+bright_color = "lightgreen"
+dim_color    = "green"
+min_length = 8
+max_length = 22
+min_speed = 0.25
+max_speed = 0.80
+mutate_chance = 0.03
+
+[power]
+use_setsid = true
+
+[theme]
+border    = "gray"
+title     = "white"
+text      = "gray"
+time      = "white"
+container = "black"
+greet     = "white"
+prompt    = "white"
+input     = "lightcyan"
+action    = "gray"
+button    = "darkgray"
