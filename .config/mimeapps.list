@@ -140,3 +140,4 @@ audio/m3u=mpv.desktop
 audio/vnd.wave=mpv.desktop
 video/vnd.avi=mpv.desktop
 inode/directory=org.gnome.Nautilus.desktop
+x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop

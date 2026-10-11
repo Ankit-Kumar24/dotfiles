@@ -9,6 +9,15 @@ window-rule {
   open-floating true
   default-column-width { fixed 1200; }
   default-window-height { fixed 920; }
+  border {
+      off
+  }
+  shadow {
+          on
+          softness 40
+          spread 5
+          offset x=0 y=5
+      }
 }
 
 layer-rule {
@@ -32,4 +41,25 @@ window-rule {
     open-floating true
     default-column-width { proportion 0.8; }
     default-window-height { proportion 0.85; }
+}
+
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    open-floating true
+    open-focused false
+    default-floating-position x=16 y=16 relative-to="bottom-right"
+    opacity 1.0
+}
+
+window-rule {
+    match app-id="steam" title="^Friends List"
+    open-floating true
+    open-focused false
+    default-column-width { fixed 450; }
+    default-window-height { fixed 600; }
+    opacity 1.0
+    default-floating-position x=16 y=0 relative-to="right"
+    border {
+        off
+    }
 }

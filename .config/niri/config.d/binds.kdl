@@ -19,8 +19,6 @@ binds {
     // Niri also has a built-in window switcher via the overview (Mod+O) —
     // try both and see which you prefer.
 
-    Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
-
     // Volume/brightness routed through Noctalia so its OSD shows feedback,
     // instead of calling wpctl/brightnessctl directly.
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
@@ -32,6 +30,13 @@ binds {
     XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
     XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+    
+    //Spotify specific keybinds
+    Alt+Space            allow-when-locked=true { spawn-sh "playerctl -p spotify play-pause"; }
+    Alt+Up               allow-when-locked=true { spawn-sh "playerctl -p spotify volume 0.05+"; }
+    Alt+Down             allow-when-locked=true { spawn-sh "playerctl -p spotify volume 0.05-"; }
+    Alt+Comma            allow-when-locked=true { spawn-sh "playerctl -p spotify previous"; }
+    Alt+Period           allow-when-locked=true { spawn-sh "playerctl -p spotify next"; }
 
     XF86MonBrightnessUp allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
