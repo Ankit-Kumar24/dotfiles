@@ -5,6 +5,7 @@ include "config.d/window-rules.kdl"
 include "config.d/binds.kdl"
 include "config.d/animations.kdl"
 include "config.d/cursor.kdl"
+include "config.d/gestures.kdl"
 
 prefer-no-csd
 
