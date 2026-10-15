@@ -3,8 +3,8 @@ local map = vim.keymap.set
 -- General
 map("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear search highlight" })
 
--- Diagnostic
-map("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic message" })
+-- Source current file
+map("n", "<leader><leader>x", "<cmd>source %<CR>", { desc = "Source current file" })
 
 -- LSP (buffer-local, only where a server is attached)
 vim.api.nvim_create_autocmd("LspAttach", {

@@ -4,4 +4,5 @@ return {
   { "catppuccin/nvim", name = "catppuccin", lazy = true },
   { "rose-pine/neovim", name = "rose-pine", lazy = true },
   { "rebelot/kanagawa.nvim", lazy = true },
+  { "vague-theme/vague.nvim", lazy = true },
 }

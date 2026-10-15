@@ -14,8 +14,9 @@ return {
     completion = {
       menu = {
         border = "rounded",
-        draw = { 
-            treesitter = { "lsp" } },
+        draw = {
+          treesitter = { "lsp" },
+        },
       },
       documentation = {
         auto_show = true,

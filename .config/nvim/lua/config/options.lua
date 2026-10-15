@@ -22,6 +22,9 @@ opt.splitbelow = true
 opt.ignorecase = true
 opt.smartcase = true
 
+opt.laststatus = 3
+opt.showmode = false
+
 vim.diagnostic.config({
   underline = true,
   severity_sort = true,
@@ -29,15 +32,14 @@ vim.diagnostic.config({
   virtual_text = { prefix = "●" },
   signs = {
     text = {
-      [vim.diagnostic.severity.ERROR] = " ",
-      [vim.diagnostic.severity.WARN] = " ",
-      [vim.diagnostic.severity.INFO] = " ",
-      [vim.diagnostic.severity.HINT] = "󰌵 ",
+      [vim.diagnostic.severity.ERROR] = "\u{f057} ",
+      [vim.diagnostic.severity.WARN] = "\u{f071} ",
+      [vim.diagnostic.severity.INFO] = "\u{f05a} ",
+      [vim.diagnostic.severity.HINT] = "\u{f0335} ",
     },
   },
   float = {
     border = "rounded",
-    source = "always",
+    source = "if_many",
   },
 })
-

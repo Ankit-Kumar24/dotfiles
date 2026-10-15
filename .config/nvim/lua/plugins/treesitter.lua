@@ -4,7 +4,12 @@ return {
   build = ":TSUpdate",
   config = function()
     require("nvim-treesitter").install({
-      "javascript", "typescript", "tsx", "json", "html", "css",
+      "javascript",
+      "typescript",
+      "tsx",
+      "json",
+      "html",
+      "css",
     })
 
     vim.api.nvim_create_autocmd("FileType", {
