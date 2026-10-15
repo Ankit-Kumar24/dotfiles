@@ -61,3 +61,4 @@ export NPM_CONFIG_CACHE="$HOME/.cache/npm"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias ldot='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
