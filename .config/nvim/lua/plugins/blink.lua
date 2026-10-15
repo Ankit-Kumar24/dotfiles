@@ -5,6 +5,10 @@ return {
   dependencies = { "rafamadriz/friendly-snippets" },
   opts_extend = { "sources.default" },
   opts = {
+
+    enabled = function()
+      return vim.bo.buftype ~= "prompt" and vim.b.completion ~= false and not vim.g.completion_disabled
+    end,
     keymap = { preset = "default" },
 
     appearance = {

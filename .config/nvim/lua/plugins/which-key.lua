@@ -9,6 +9,7 @@ return {
       { "<leader>c", group = "code" },
       { "<leader>g", group = "git" },
       { "<leader>t", group = "toggle" },
+      { "<leader>m", group = "markdown" },
     },
   },
   keys = {
