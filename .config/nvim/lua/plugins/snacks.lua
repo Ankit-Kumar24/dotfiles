@@ -5,6 +5,7 @@ return {
   opts = {
     picker = { enabled = true },
     lazygit = { enabled = true },
+    explorer = { enabled = true },
   },
   keys = {
     {
@@ -20,6 +21,13 @@ return {
         Snacks.lazygit.log()
       end,
       desc = "Git log (lazygit)",
+    },
+    {
+      "<leader>e",
+      function()
+        Snacks.explorer()
+      end,
+      desc = "Explorer",
     },
     {
       "<leader>gf",

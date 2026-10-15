@@ -43,3 +43,9 @@ vim.diagnostic.config({
     source = "if_many",
   },
 })
+
+-- Remote-plugin providers: unused (all plugins are Lua)
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_ruby_provider = 0

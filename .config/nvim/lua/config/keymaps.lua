@@ -6,6 +6,9 @@ map("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear search highlight" })
 -- Source current file
 map("n", "<leader><leader>x", "<cmd>source %<CR>", { desc = "Source current file" })
 
+map("n", "<leader>tt", "<cmd>TransparentToggle<cr>", { desc = "Transparency" })
+map("n", "<leader>tf", "<cmd>FormatToggle<cr>", { desc = "Format on save" })
+
 -- LSP (buffer-local, only where a server is attached)
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("user_lsp_keymaps", { clear = true }),
