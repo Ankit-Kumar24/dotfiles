@@ -5,7 +5,7 @@ local opt = vim.opt
 
 opt.number = true
 opt.relativenumber = true
-opt.signcolumn = "yes"
+opt.signcolumn = "yes:2"
 opt.cursorline = true
 opt.scrolloff = 8
 
