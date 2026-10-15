@@ -5,13 +5,6 @@ local function diff_source()
   end
 end
 
-local function lsp_clients()
-  local names = vim.tbl_map(function(c)
-    return c.name
-  end, vim.lsp.get_clients({ bufnr = 0 }))
-  return table.concat(names, ", ")
-end
-
 return {
   "nvim-lualine/lualine.nvim",
   event = "VeryLazy",
@@ -34,15 +27,8 @@ return {
         { "filename", path = 1 },
         "diagnostics",
       },
-      lualine_x = {
-        {
-          require("lazy.status").updates,
-          cond = require("lazy.status").has_updates,
-        },
-        { lsp_clients, icon = "\u{f085}" },
-        "filetype",
-      },
-      lualine_y = { "progress" },
+      lualine_x = { "filetype" },
+      lualine_y = {}, -- empty on purpose: leaving it out brings back lualine's default "progress"
       lualine_z = { "location" },
     },
   },
