@@ -1,5 +1,5 @@
 layout {
-    gaps 6
+    gaps 3.8
 
     focus-ring {
         off
@@ -8,24 +8,21 @@ layout {
     preset-column-widths {
         proportion 0.5
         proportion 0.33333
-	proportion 1.0
+	    proportion 1.0
     }
 
     // Width new windows open at.
     default-column-width { proportion 1.0; }
 
-    border {
-	on
-        width 1
-        active-gradient   from="#ffffff66" to="#ffffff14" angle=135
-        inactive-gradient from="#ffffff22" to="#ffffff08" angle=135
-    }
-
     shadow {
         on
-        softness 40
-        spread 4
-        offset x=0 y=8
-        color "#00000055"
+        softness 30
+        spread 5 
+        offset x=0 y=2
+        color "#00000070"
+        draw-behind-window true
+    }
+    insert-hint {
+        on
     }
 }

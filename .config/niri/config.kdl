@@ -6,15 +6,15 @@ include "config.d/binds.kdl"
 include "config.d/animations.kdl"
 include "config.d/cursor.kdl"
 include "config.d/gestures.kdl"
+include "noctalia.kdl"
 
 prefer-no-csd
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
-include "noctalia.kdl"
-
 hotkey-overlay {
 	skip-at-startup
+    hide-not-bound
 }
 
 blur {
