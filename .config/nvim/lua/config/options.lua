@@ -21,6 +21,7 @@ opt.splitbelow = true
 
 opt.ignorecase = true
 opt.smartcase = true
+opt.swapfile = false
 
 opt.laststatus = 3
 opt.showmode = false
