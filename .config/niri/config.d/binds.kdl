@@ -6,8 +6,8 @@ binds {
     Mod+Escape  allow-inhibiting=false                 { toggle-keyboard-shortcuts-inhibit; }
     
     // === === Launchers and Apps === ===
+    Mod+Space  hotkey-overlay-title="Application launcher" repeat=false  { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+Space  hotkey-overlay-title="Application launcher"   { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+B      hotkey-overlay-title="Open browser"           { spawn "helium-browser"; }
     Mod+E      hotkey-overlay-title="Open file explorer"     { spawn "nautilus"; }
     Mod+S      hotkey-overlay-title="Launch spotify"         { spawn "spotify"; }
