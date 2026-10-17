@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
 # Copies custom system files (outside $HOME) into ~/.config/system/files/
-# Stock files with small edits are documented in system-notes.md instead.
 set -euo pipefail
 
 DEST="$HOME/.config/system/files"
 
 PATHS=(
-    /etc/greetd/config.toml
-    /etc/greetd/tuigreet.toml
-    /etc/systemd/system/create_ap.service.d/override.conf
+    /etc/ly/config.ini
     /etc/modprobe.d/nvidia-power.conf
     /etc/pacman.d/hooks
     /etc/systemd/logind.conf.d
