@@ -1,0 +1,78 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "~/.config/fastfetch/linux/small.png",
+    "height": 9,
+    "padding": {
+      "top": 1,
+      "right": 2
+    }
+  },
+  "display": {
+    "separator": " › ",
+    "color": {
+      "separator": "#6b7280",
+      "output": "#e5e7eb"
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "key": " \uf007",
+      "keyColor": "#f2c879",
+      "color": {
+        "user": "#93c5fd",
+        "at": "#6b7280",
+        "host": "#c4b5fd"
+      }
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;107;114;128m╭─ \u001b[38;2;229;231;235msystem \u001b[38;2;107;114;128m─────────────────────────────╮"
+    },
+    {
+      "type": "os",
+      "key": "│ \udb80\udf3d OS    ",
+      "format": "{pretty-name}",
+      "keyColor": "#93c5fd"
+    },
+    {
+      "type": "kernel",
+      "key": "│ \uf17c Kernel",
+      "format": "{release}",
+      "keyColor": "#93c5fd"
+    },
+    {
+      "type": "wm",
+      "key": "│ \ueae4 WM    ",
+      "format": "{2}",
+      "keyColor": "#93c5fd"
+    },
+    {
+      "type": "packages",
+      "key": "│ \udb80\udfd7 Pkgs  ",
+      "keyColor": "#c4b5fd"
+    },
+    {
+      "type": "memory",
+      "key": "│ \udb80\udc1a Memory",
+      "keyColor": "#c4b5fd",
+      "format": "{used} / {total}"
+    },
+    {
+      "type": "uptime",
+      "key": "│ \udb86\uded0 Uptime",
+      "keyColor": "#c4b5fd"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;107;114;128m╰──────────────────────────────────────╯"
+    },
+    {
+      "type": "custom",
+      "format": "  \u001b[38;2;243;139;168m● \u001b[38;2;250;179;135m● \u001b[38;2;249;226;175m● \u001b[38;2;166;227;161m● \u001b[38;2;137;180;250m● \u001b[38;2;203;166;247m●"
+    },
+    "break"
+  ]
+}

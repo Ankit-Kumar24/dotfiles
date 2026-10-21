@@ -31,6 +31,7 @@ swayimg.text.status_timeout = 2
 swayimg.viewer.default_scale = "optimal" -- shrink big images, never upscale small ones
 swayimg.viewer.loop = true
 swayimg.viewer.preload = 2
+swayimg.viewer.srgba.opaque = false
 swayimg.viewer.set_window_background(GLASS)
 swayimg.viewer.set_image_chessboard(16, 0x33ffffff, 0x1affffff)
 swayimg.viewer.text = {

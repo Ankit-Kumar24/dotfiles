@@ -1,0 +1,148 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|
+//
+//
+
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "$(find ~/.config/fastfetch/linux/ -name 'yen*.png' | sort -R | head -1)",
+    "height": 16,
+    "padding": {
+      "top": 4,
+      "right": 0
+    }
+  },
+  "display": {
+    "separator": " › ",
+    "color": {
+      "separator": "#6c4a9e",
+      "output": "#cfcbd8"
+    },
+    "percent": {
+      "color": {
+        "green": "#8fbf7f",
+        "yellow": "#d8b26e",
+        "red": "#e06c8a"
+      }
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "key": " \uf007",
+      "keyColor": "#d8b26e",
+      "color": {
+        "user": "#d8b26e",
+        "at": "#6c4a9e",
+        "host": "#c9b2f0"
+      }
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;108;74;158m╭─ \u001b[38;2;216;178;110msystem \u001b[38;2;108;74;158m────────────────────────────────────╮"
+    },
+    {
+      "type": "os",
+      "key": "│ \udb80\udf3d OS      ",
+      "format": "{pretty-name}",
+      "keyColor": "#c9b2f0"
+    },
+    {
+      "type": "kernel",
+      "key": "│ \uf17c Kernel  ",
+      "format": "{release}",
+      "keyColor": "#c9b2f0"
+    },
+    {
+      "type": "packages",
+      "key": "│ \udb80\udfd7 Packages",
+      "keyColor": "#c9b2f0"
+    },
+    {
+      "type": "display",
+      "key": "│ \udb80\udf79 Display ",
+      "format": "{width}x{height} @ {refresh-rate} Hz [{type}]",
+      "keyColor": "#c9b2f0"
+    },
+    {
+      "type": "wm",
+      "key": "│ \ueae4 WM      ",
+      "format": "{2}",
+      "keyColor": "#c9b2f0"
+    },
+    {
+      "type": "terminalfont",
+      "key": "│ \ue659 Font    ",
+      "keyColor": "#c9b2f0"
+    },
+    {
+      "type": "terminal",
+      "key": "│ \uf489 Terminal",
+      "format": "{1}",
+      "keyColor": "#c9b2f0"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;108;74;158m╰─────────────────────────────────────────────╯"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;108;74;158m╭─ \u001b[38;2;216;178;110mmachine \u001b[38;2;108;74;158m───────────────────────────────────╮"
+    },
+    {
+      "type": "cpu",
+      "key": "│ \uf4bc CPU     ",
+      "format": "{name}",
+      "temp": true,
+      "keyColor": "#9b7fd4"
+    },
+    {
+      "type": "gpu",
+      "key": "│ \udb80\udef5 GPU     ",
+      "format": "{1} {2} {12}",
+      "keyColor": "#9b7fd4"
+    },
+    {
+      "type": "shell",
+      "key": "│ \udb81\ude33 Shell   ",
+      "format": "{1}",
+      "keyColor": "#9b7fd4"
+    },
+    {
+      "type": "memory",
+      "key": "│ \udb80\udc1a Memory  ",
+      "keyColor": "#9b7fd4"
+    },
+    {
+      "type": "command",
+      "key": "│ \udb86\udd9f OS Age  ",
+      "keyColor": "#9b7fd4",
+      "text": "first=$(head -1 /var/log/pacman.log | sed 's/^\\[\\([^]]*\\)\\].*/\\1/'); echo $(( ($(date +%s) - $(date -d \"$first\" +%s)) / 86400 )) days"
+    },
+    {
+      "type": "uptime",
+      "key": "│ \udb86\uded0 Uptime  ",
+      "keyColor": "#9b7fd4"
+    },
+    {
+      "type": "host",
+      "key": "│ \uf300 Machine ",
+      "format": "{vendor}",
+      "keyColor": "#9b7fd4"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;108;74;158m╰─────────────────────────────────────────────╯"
+    },
+    {
+      "type": "custom",
+      "format": "  \u001b[38;2;201;178;240m● \u001b[38;2;155;127;212m● \u001b[38;2;108;74;158m● \u001b[38;2;216;178;110m● \u001b[38;2;207;203;216m● \u001b[38;2;143;191;127m●"
+    },
+    "break"
+  ]
+}

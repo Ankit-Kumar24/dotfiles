@@ -62,3 +62,17 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias ldot='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+# fastfetch: small.jsonc in narrow terminals, full.jsonc otherwise;
+fastfetch() {
+    local dir=~/.config/fastfetch
+    if [[ " $* " == *" -c "* || " $* " == *" --config "* ]]; then
+        command fastfetch "$@"
+    elif (( COLUMNS < 75 )); then
+        command fastfetch -c $dir/small.jsonc "$@"
+    else
+        command fastfetch -c $dir/full.jsonc "$@"
+    fi
+}
+alias ff='fastfetch'
+alias ffs='fastfetch -c ~/.config/fastfetch/small.jsonc'
