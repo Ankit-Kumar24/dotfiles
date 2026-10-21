@@ -5,6 +5,7 @@ set -euo pipefail
 DEST="$HOME/.config/system/files"
 
 PATHS=(
+    /etc/intel-undervolt.conf
     /etc/ly/config.ini
     /etc/modprobe.d/nvidia-power.conf
     /etc/pacman.d/hooks
