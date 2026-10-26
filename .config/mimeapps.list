@@ -1,4 +1,3 @@
-
 [Default Applications]
 image/png=swayimg.desktop
 image/jpeg=swayimg.desktop
@@ -16,7 +15,7 @@ x-scheme-handler/https=helium.desktop
 x-scheme-handler/about=helium.desktop
 x-scheme-handler/unknown=helium.desktop
 application/xhtml+xml=helium.desktop
-application/pdf=helium.desktop
+application/pdf=sioyek.desktop
 application/ogg=mpv.desktop
 application/x-ogg=mpv.desktop
 application/mxf=mpv.desktop
@@ -142,3 +141,6 @@ video/vnd.avi=mpv.desktop
 inode/directory=org.gnome.Nautilus.desktop
 x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
 x-scheme-handler/jetbrains=jetbrainsd.desktop
+
+[Added Associations]
+application/pdf=sioyek.desktop;

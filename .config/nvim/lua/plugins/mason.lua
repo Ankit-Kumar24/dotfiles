@@ -24,6 +24,7 @@ return {
         "shellcheck",
         "prettierd",
         "prettier",
+        "taplo",
       },
     })
   end,

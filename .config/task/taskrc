@@ -10,3 +10,36 @@ weekstart=monday
 search.case.sensitive=no
 confirmation=yes
 news.version=3.5.0
+
+# ---------- theme ----------
+# Days ahead that count as "due soon"
+due=3
+
+# Deadline ladder: the closer it is, the hotter the color
+color.overdue=bold color196
+color.due.today=bold color208
+color.due=color220
+color.scheduled=color117
+
+# Priority (shows when no deadline rule applies)
+color.uda.priority.H=bold color204
+color.uda.priority.M=color180
+color.uda.priority.L=color245
+
+# State
+color.active=bold color114
+color.blocked=color242
+color.blocking=bold
+color.recurring=color141
+color.completed=color242
+color.deleted=color238
+
+# Headers / chrome
+color.label=bold color75
+color.label.sort=bold color111
+color.header=color244
+color.footnote=color244
+color.alternate=
+
+# When several rules match, the leftmost wins
+rule.precedence.color=deleted,completed,active,overdue,due.today,blocked,due,scheduled,uda.,blocking,keyword.,tag.,project.,recurring,tagged
