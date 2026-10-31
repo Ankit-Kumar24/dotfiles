@@ -141,6 +141,8 @@ video/vnd.avi=mpv.desktop
 inode/directory=org.gnome.Nautilus.desktop
 x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
 x-scheme-handler/jetbrains=jetbrainsd.desktop
+text/plain=nvim.desktop
 
 [Added Associations]
 application/pdf=sioyek.desktop;
+text/plain=nvim.desktop;

@@ -29,7 +29,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Key Bindings 
 bindkey '^ ' autosuggest-accept #Ctrl+Space: accept suggestion
-bindkey '^[[1;5C' autosuggest-partial-accept #Ctrl+→: accept one word
+bindkey '^[[1;5C' forward-word    # Ctrl+→: accept one word of the suggestion
+bindkey '^[[1;5D' backward-word   # Ctrl+←: move back one word
 
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste accept-line)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6C7A89,italic"
